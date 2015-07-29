@@ -7,13 +7,13 @@ Simple statistics server, building:
 mix deps.get
 mix silverb.init rel
 make release
-./start.sh
+sudo ./start.sh
 ```
 
 Usage:
 
 ```
-curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
+curl -d '{"cmd":"get_state"}' http://127.0.0.1
 
 {  
    "args":null,
@@ -30,8 +30,8 @@ curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
 ```
 
 ```
-curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' http://127.0.0.1:9868
-curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
+curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' http://127.0.0.1
+curl -d '{"cmd":"get_state"}' http://127.0.0.1
 
 {  
    "args":null,
