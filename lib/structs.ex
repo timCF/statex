@@ -8,6 +8,7 @@ defmodule Statex.Structs do
 							host: nil,
 							ok: nil,
 							info: "",
+							data: nil,
 							stamp_updated: nil 
 			end
 		end

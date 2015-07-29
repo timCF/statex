@@ -16,10 +16,10 @@ use Mix.Config
 #       metadata: [:user_id]
 
 config :wwwest, 
-    server_port: 9868, 
+    server_port: 80, 
     server_timeout: 20000, # timeout for all requests
     memo_ttl: 60000, # timeout for memorize json encode and decode
-    trx_ttl: 3600000, # timeout for all trx transactions
+    trx_ttl: 5000, # timeout for all trx transactions
     callback_module: Statex.Wwwest # here are handlers for requests
 
 # It is also possible to import configuration files, relative to this

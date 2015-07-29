@@ -30,23 +30,7 @@ curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
 ```
 
 ```
-curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":""}}' http://127.0.0.1:9868
-
-{  
-   "args":{  
-      "app":"foo",
-      "host":"bar",
-      "info":"",
-      "ok":true
-   },
-   "cmd":"set_state",
-   "ok":true,
-   "result":null,
-   "trx":null
-}
-```
-
-```
+curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' http://127.0.0.1:9868
 curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
 
 {  
@@ -57,13 +41,14 @@ curl -d '{"cmd":"get_state"}' http://127.0.0.1:9868
       "list":[  
          {  
             "app":"foo",
+            "data":123,
             "host":"bar",
             "info":"",
             "ok":true,
-            "stamp_updated":1438196382524
+            "stamp_updated":1438198355445
          }
       ],
-      "stamp_now":1438196442411
+      "stamp_now":1438198372789
    },
    "trx":null
 }
