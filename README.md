@@ -30,8 +30,8 @@ curl -d '{"cmd":"get_state"}' -u login:password http://127.0.0.1:8888
 ```
 
 ```
-curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' -u login:password http://127.0.0.1
-curl -d '{"cmd":"get_state"}' -u login:password http://127.0.0.1
+curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' -u login:password http://127.0.0.1:8888
+curl -d '{"cmd":"get_state"}' -u login:password http://127.0.0.1:8888
 
 {  
    "args":null,
