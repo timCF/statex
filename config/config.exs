@@ -16,11 +16,12 @@ use Mix.Config
 #       metadata: [:user_id]
 
 config :wwwest, 
-    server_port: 80, 
+    server_port: 8888, 
     server_timeout: 20000, # timeout for all requests
     memo_ttl: 60000, # timeout for memorize json encode and decode
     trx_ttl: 5000, # timeout for all trx transactions
-    callback_module: Statex.Wwwest # here are handlers for requests
+    callback_module: Statex.Wwwest, # here are handlers for requests
+    basic_auth: %{login: "login", password: "password"} # | :none
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

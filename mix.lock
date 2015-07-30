@@ -13,4 +13,4 @@
   "silverb": {:git, "git://github.com/timCF/silverb.git", "1ea39cd1bb63c2d99cacca954e0c8f2788961686", []},
   "tinca": {:git, "git://github.com/timCF/tinca.git", "dc65918473de04eef8340e9500754811882c5515", []},
   "uuid": {:git, "git://github.com/okeuday/uuid.git", "6bc38507460c821321d66504d3f8d6c1cdb57d98", []},
-  "wwwest": {:git, "git://github.com/timCF/wwwest.git", "5786f71c2cf53bdd73446210008e348a640cb4a2", []}}
+  "wwwest": {:git, "git://github.com/timCF/wwwest.git", "06948b990c38e53dc15de185b0c3f22fe98fd455", []}}

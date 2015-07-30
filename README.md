@@ -1,7 +1,7 @@
 Statex
 ======
 
-Simple statistics server, building:
+Simple statistics server. Configuration in ./config/config.exs. Building:
 
 ```
 mix deps.get
@@ -13,7 +13,7 @@ sudo ./start.sh
 Usage:
 
 ```
-curl -d '{"cmd":"get_state"}' http://127.0.0.1
+curl -d '{"cmd":"get_state"}' -u login:password http://127.0.0.1:8888
 
 {  
    "args":null,
@@ -30,8 +30,8 @@ curl -d '{"cmd":"get_state"}' http://127.0.0.1
 ```
 
 ```
-curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' http://127.0.0.1
-curl -d '{"cmd":"get_state"}' http://127.0.0.1
+curl -d '{"cmd":"set_state","args":{"app":"foo","host":"bar","ok":true,"info":"","data":123}}' -u login:password http://127.0.0.1
+curl -d '{"cmd":"get_state"}' -u login:password http://127.0.0.1
 
 {  
    "args":null,
